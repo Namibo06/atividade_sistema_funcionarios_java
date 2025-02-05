@@ -4,8 +4,12 @@ public class Horista extends Funcionario{
     private double salarioPorHora;
     private int horasTrabalhadas;
 
+    public Horista(String nome, String cpf) {
+        super(nome, cpf);
+    }
+
     @Override
-    public double vencimento(){
+    public double vencimento() {
         return salarioPorHora * horasTrabalhadas;
     }
 

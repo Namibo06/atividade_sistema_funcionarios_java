@@ -1,6 +1,6 @@
 package org.example;
 
-public class Funcionario {
+abstract class Funcionario {
     private String nome;
     private String cpf;
 
@@ -11,9 +11,7 @@ public class Funcionario {
         this.cpf = cpf;
     }
 
-    public double vencimento(){
-        return 0;
-    }
+    public abstract double vencimento();
 
     public String getNome() {
         return nome;
